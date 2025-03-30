@@ -1,0 +1,37 @@
+{
+  "name": "agenticmemory",
+  "version": "1.0.0",
+  "description": "A novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "example": "ts-node src/examples/simple-example.ts",
+    "evaluate": "ts-node src/evaluate-dataset.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WujiangXu/AgenticMemory.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WujiangXu/AgenticMemory/issues"
+  },
+  "homepage": "https://github.com/WujiangXu/AgenticMemory#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.7",
+    "openai": "^4.90.0",
+    "uuid": "^11.1.0"
+  }
+}

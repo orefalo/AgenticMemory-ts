@@ -1,6 +1,6 @@
 # Agentic Memory 🧠
 
-A novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.
+A novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way, now available in TypeScript.
 
 > **Note:** This repository is specifically designed to reproduce the results presented in our paper. If you want to use the A-MEM system in building your agents, please refer to our official implementation at: [https://github.com/agiresearch/A-mem](https://github.com/agiresearch/A-mem)
 
@@ -27,6 +27,7 @@ Our project introduces an innovative **Agentic Memory** system that revolutioniz
 - 🌐 Interconnected knowledge networks
 - 🔄 Continuous memory evolution and refinement
 - 🤖 Agent-driven decision making for adaptive memory management
+- 📊 TypeScript implementation for better type safety and developer experience
 
 ## Framework 🏗️
 
@@ -50,6 +51,36 @@ When a new memory is added to the system:
 Empirical experiments conducted on six foundation models demonstrate superior performance compared to existing SOTA baselines.
 
 ## Getting Started 🚀
+
+### TypeScript Version
+
+1. Clone the repository:
+```bash
+git clone https://github.com/WujiangXu/AgenticMemory.git
+cd AgenticMemory
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Build the project:
+```bash
+npm run build
+```
+
+4. Run the evaluation script:
+```bash
+npm run start
+```
+
+Or for development:
+```bash
+npm run dev
+```
+
+### Python Version (Original)
 
 1. Clone the repository:
 ```bash
@@ -84,6 +115,20 @@ pip install -r requirements.txt
 python test_advanced.py 
 ```
 
+## TypeScript Implementation Notes 📝
+
+The TypeScript implementation provides the following benefits:
+- Strong typing for better code quality and developer experience
+- Modern JavaScript features and patterns
+- Better tooling and IDE support
+- Easier integration with web applications and Node.js environments
+
+Key components:
+- `AgenticMemorySystem`: Main memory management system
+- `MemoryNote`: Basic memory unit with metadata
+- `SimpleEmbeddingRetriever`: Retrieval system for finding related memories
+- `LLMController`: Interface for interacting with language models
+
 ## Citation 📚
 
 If you use this code in your research, please cite our work:
@@ -100,5 +145,3 @@ If you use this code in your research, please cite our work:
 ## License 📄
 
 This project is licensed under the MIT License. See LICENSE for details.
-
-
