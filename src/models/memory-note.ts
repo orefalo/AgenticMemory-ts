@@ -1,6 +1,7 @@
-import { v4 as uuidv4 } from 'uuid';
+
 import { ContentAnalysis, MemoryNoteData } from '../types';
 import { LLMController } from './llm-controller';
+import { nanoid } from 'nanoid';
 
 /**
  * Basic memory unit with metadata
@@ -31,7 +32,7 @@ export class MemoryNote {
     this.content = data.content;
     
     // Set default values for optional parameters
-    this.id = data.id || uuidv4();
+    this.id = data.id || nanoid();
     this.links = data.links || [];
     this.importance_score = data.importance_score || 1.0;
     this.retrieval_count = data.retrieval_count || 0;

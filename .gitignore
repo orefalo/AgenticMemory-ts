@@ -1,2 +1,7 @@
 node_modules
 dist
+.envpnpm-lock.yaml
+pnpm-lock.yaml
+pnpm-lock.yaml
+.env
+*.log
